@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html ⚡>
+  <head>
+    <meta charset="utf-8" />
+    <title>PVK Games</title>
+    <link rel="canonical" href="index.html" />
+    <meta
+      name="viewport"
+      content="width=device-width,minimum-scale=1,initial-scale=1"
+    />
+    <script
+      async
+      custom-element="amp-form"
+      src="https://cdn.ampproject.org/v0/amp-form-0.1.js"
+    ></script>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+    <style amp-custom>
+      .topbar {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        background-color: #cecdcd;
+        height: 30px;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .social_buttons {
+        min-width: 200px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .social_link {
+        text-decoration: none;
+        color: #585656;
+      }
+
+      .moving_text {
+        width: 100%;
+        color: #585656;
+      }
+      .moving_text_container {
+        flex: 1;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 50px;
+        padding-right: 50px;
+        border-bottom: 2px solid #cecdcd;
+        align-items: center;
+      }
+      .searchbar_container {
+        display: flex;
+        gap: 5px;
+        flex: 1;
+        color: #585656;
+        align-items: center; /* Add this line */
+      }
+      .divider {
+        height: 20px;
+        border-left: 2px solid #585656;
+      }
+      .upper_cart {
+        display: flex;
+        gap: 15px;
+      }
+      .searchbar {
+        border: 2px solid #585656;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        color: #585656;
+        padding: 5px 20px;
+      }
+      .searchbar_input {
+        border: none;
+        flex: 1;
+      }
+      .section_two {
+        flex: 1;
+        margin: 15px 50px;
+      }
+      .devices_text {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .header_btn_1 {
+        font-weight: 900;
+        color: rgb(22, 187, 118);
+        padding: 5px 10px;
+        background-color: transparent;
+        border: 2px solid;
+        border-radius: 5px;
+      }
+      .header_btn_2 {
+        font-weight: 900;
+        color: #fff;
+        padding: 5px 10px;
+        background-color: rgb(22, 187, 118);
+        border: 2px solid;
+        border-radius: 5px;
+      }
+      .location {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+      .bold_text {
+        font-weight: 600;
+      }
+      .navbar {
+        width: 100%;
+        z-index: 9999;
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+      .container {
+        margin-top: 150px;
+        margin-bottom: 50px;
+        margin-right: 5vw;
+        margin-left: 5vw;
+      }
+      .bc_text {
+        text-decoration: none;
+        color: rgb(22, 187, 118);
+      }
+      .breadcrumps {
+        display: flex;
+        gap: 10px;
+      }
+      .main_content {
+        display: flex;
+        gap: 20px;
+      }
+      .left_sidebar,
+      .right_sidebar {
+        width: 20%;
+      }
+      .left_sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 4px 6px;
+      }
+      .middle_content {
+        flex: 1;
+      }
+      .geadiant_text {
+        width: 100%;
+        border: 2px solid;
+        padding: 4px 6px;
+        height: 40px;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        font-weight: 700;
+        color: white;
+        background-image: linear-gradient(to right, #d400ff, #ddb5e7);
+      }
+    </style>
+
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      }
+      @-webkit-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-moz-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-ms-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-o-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+    </style>
+
+    <noscript
+      ><style amp-boilerplate>
+        body {
+          -webkit-animation: none;
+          -moz-animation: none;
+          -ms-animation: none;
+          animation: none;
+        }
+      </style></noscript
+    >
+  </head>
+
+  <body>
+    <!-- topbar -->
+    <div class="navbar">
+      <section class="topbar">
+        <div class="">
+          <div class="social_buttons">
+            <a class="social_link" href="#">Livechat</a>
+
+            <a class="social_link" href="#">Whatsapp</a>
+          </div>
+        </div>
+        <div class="moving_text_container">
+          <marquee class="moving_text" behavior="loop" direction="horizontal"
+            >Download Aplikasi Pkv Games</marquee
+          >
+        </div>
+      </section>
+      <section class="header">
+        <div class="logo">
+          <amp-img
+            src="./assets/logo.png"
+            width="100px"
+            height="50px"
+            alt="logo"
+          >
+          </amp-img>
+        </div>
+        <div class="section_two">
+          <div class="searchbar_container">
+            <span class="Kategori">Kategori</span>
+            <div class="searchbar">
+              <amp-img
+                src="./assets/search (1).png"
+                width="20"
+                height="20"
+                alt="search"
+              >
+              </amp-img>
+              <input
+                class="searchbar_input"
+                type="text"
+                placeholder="Cari di Ashikqq"
+              />
+            </div>
+          </div>
+          <p class="devices_text">Android IPhone Komputer / PC Ipad / Tab</p>
+        </div>
+        <div class="chart">
+          <div class="upper_cart">
+            <amp-img
+              src="./assets/shopping-cart.png"
+              width="25"
+              height="25"
+              alt="cart"
+            >
+            </amp-img>
+            <div class="divider"></div>
+            <button class="header_btn_1">Masuk</button>
+            <button class="header_btn_2">Daftar</button>
+          </div>
+          <div class="location">
+            <amp-img
+              src="./assets/map-pin.png"
+              width="10"
+              height="10"
+              alt="map"
+            >
+            </amp-img>
+            <p>dikim ki</p>
+            <p class="bold_text">Jakarta Pustak ▼</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="container">
+      <div class="breadcrumps">
+        <a href="" class="bc_text">Home</a>➧
+        <a href="" class="bc_text">Mainan & Hobi</a>➧
+        <a href="" class="bc_text">Permainan Kartu</a>➧
+        <a href="" class="bc_text">pkv games</a>➧
+        <a href="" class="bc_text">...</a>
+      </div>
+      <div class="main_content">
+        <div class="left_sidebar">
+          <div class="geadiant_text">Serbu OS</div>
+          <div class="form_card">
+            <form method="post" action-xhr="" target="_top">
+              <fieldset>
+                <label>
+                  <span>Name:</span>
+                  <input type="text" name="name" required />
+                </label>
+                <label>
+                  <span>Email:</span>
+                  <input type="email" name="email" required />
+                </label>
+                <input type="submit" value="Subscribe" />
+              </fieldset>
+              <div submit-success>
+                <template type="amp-mustache">
+                  Subscription successful!
+                </template>
+              </div>
+              <div submit-error>
+                <template type="amp-mustache"> Subscription failed! </template>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="middle_content">middle</div>
+        <div class="right_sidebar">right</div>
+      </div>
+    </div>
+  </body>
+</html>
