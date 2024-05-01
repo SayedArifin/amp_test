@@ -64,7 +64,15 @@
         }
       }
     </style>
+
     <style amp-custom>
+      @media screen and (max-width: 1280px) {
+        .main_content {
+          max-width: 1280px;
+          margin: 0 auto;
+          padding: 0 20px;
+        }
+      }
       .topbar {
         display: flex;
         gap: 20px;
@@ -204,7 +212,7 @@
         width: 100%;
         border: 2px solid;
         padding: 4px 6px;
-        height: 40px;
+        height: 30px;
         font-size: 20px;
         display: flex;
         align-items: center;
@@ -214,6 +222,18 @@
         background-image: linear-gradient(to right, #d400ff, #ddb5e7);
       }
     </style>
+
+    <!-- Additional styles or scripts -->
+    <noscript>
+      <style amp-boilerplate>
+        body {
+          -webkit-animation: none;
+          -moz-animation: none;
+          -ms-animation: none;
+          animation: none;
+        }
+      </style>
+    </noscript>
   </head>
   <body>
     <!-- Navbar -->
@@ -301,35 +321,13 @@
         <div class="left_sidebar">
           <div class="geadiant_text">Serbu OS</div>
           <div class="form_card">
-            <form method="post" action-xhr="#" target="_top">
-              <fieldset>
-                <label>
-                  <span>Name:</span>
-                  <input type="text" name="name" required />
-                </label>
-                <label>
-                  <span>Email:</span>
-                  <input type="email" name="email" required />
-                </label>
-                <input type="submit" value="Subscribe" />
-              </fieldset>
-            </form>
+            <h3 class="form_heading">Atur jumlah dan catatan</h3>
+            <form method="post" action-xhr="#" target="_top"></form>
           </div>
         </div>
         <div class="middle_content">middle</div>
         <div class="right_sidebar">right</div>
       </div>
     </div>
-    <!-- Additional styles or scripts -->
-    <noscript>
-      <style amp-boilerplate>
-        body {
-          -webkit-animation: none;
-          -moz-animation: none;
-          -ms-animation: none;
-          animation: none;
-        }
-      </style>
-    </noscript>
   </body>
 </html>
