@@ -15,6 +15,55 @@
     ></script>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
 
+    <!-- AMP boilerplate styles -->
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      }
+      @-webkit-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-moz-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-ms-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-o-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+    </style>
     <style amp-custom>
       .topbar {
         display: flex;
@@ -56,7 +105,7 @@
         gap: 5px;
         flex: 1;
         color: #585656;
-        align-items: center; /* Add this line */
+        align-items: center;
       }
       .divider {
         height: 20px;
@@ -165,96 +214,36 @@
         background-image: linear-gradient(to right, #d400ff, #ddb5e7);
       }
     </style>
-
-    <style amp-boilerplate>
-      body {
-        -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-        -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-        -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-        animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-      }
-      @-webkit-keyframes -amp-start {
-        from {
-          visibility: hidden;
-        }
-        to {
-          visibility: visible;
-        }
-      }
-      @-moz-keyframes -amp-start {
-        from {
-          visibility: hidden;
-        }
-        to {
-          visibility: visible;
-        }
-      }
-      @-ms-keyframes -amp-start {
-        from {
-          visibility: hidden;
-        }
-        to {
-          visibility: visible;
-        }
-      }
-      @-o-keyframes -amp-start {
-        from {
-          visibility: hidden;
-        }
-        to {
-          visibility: visible;
-        }
-      }
-      @keyframes -amp-start {
-        from {
-          visibility: hidden;
-        }
-        to {
-          visibility: visible;
-        }
-      }
-    </style>
-
-    <noscript
-      ><style amp-boilerplate>
-        body {
-          -webkit-animation: none;
-          -moz-animation: none;
-          -ms-animation: none;
-          animation: none;
-        }
-      </style></noscript
-    >
   </head>
-
   <body>
-    <!-- topbar -->
+    <!-- Navbar -->
     <div class="navbar">
+      <!-- Topbar -->
       <section class="topbar">
-        <div class="">
+        <div>
           <div class="social_buttons">
             <a class="social_link" href="#">Livechat</a>
-
             <a class="social_link" href="#">Whatsapp</a>
           </div>
         </div>
         <div class="moving_text_container">
-          <marquee class="moving_text" behavior="loop" direction="horizontal"
-            >Download Aplikasi Pkv Games</marquee
-          >
+          <p class="moving_text">Download Aplikasi Pkv Games</p>
         </div>
       </section>
+      <!-- Header -->
       <section class="header">
+        <!-- Logo -->
         <div class="logo">
           <amp-img
             src="./assets/logo.png"
             width="100px"
             height="50px"
             alt="logo"
-          >
-          </amp-img>
+          ></amp-img>
         </div>
+        <!-- Section Two -->
         <div class="section_two">
+          <!-- Searchbar Container -->
           <div class="searchbar_container">
             <span class="Kategori">Kategori</span>
             <div class="searchbar">
@@ -263,8 +252,7 @@
                 width="20"
                 height="20"
                 alt="search"
-              >
-              </amp-img>
+              ></amp-img>
               <input
                 class="searchbar_input"
                 type="text"
@@ -274,6 +262,7 @@
           </div>
           <p class="devices_text">Android IPhone Komputer / PC Ipad / Tab</p>
         </div>
+        <!-- Chart -->
         <div class="chart">
           <div class="upper_cart">
             <amp-img
@@ -281,8 +270,7 @@
               width="25"
               height="25"
               alt="cart"
-            >
-            </amp-img>
+            ></amp-img>
             <div class="divider"></div>
             <button class="header_btn_1">Masuk</button>
             <button class="header_btn_2">Daftar</button>
@@ -293,14 +281,14 @@
               width="10"
               height="10"
               alt="map"
-            >
-            </amp-img>
+            ></amp-img>
             <p>dikim ki</p>
             <p class="bold_text">Jakarta Pustak ▼</p>
           </div>
         </div>
       </section>
     </div>
+    <!-- Main content -->
     <div class="container">
       <div class="breadcrumps">
         <a href="" class="bc_text">Home</a>➧
@@ -313,7 +301,7 @@
         <div class="left_sidebar">
           <div class="geadiant_text">Serbu OS</div>
           <div class="form_card">
-            <form method="post" action-xhr="" target="_top">
+            <form method="post" action-xhr="#" target="_top">
               <fieldset>
                 <label>
                   <span>Name:</span>
@@ -325,14 +313,6 @@
                 </label>
                 <input type="submit" value="Subscribe" />
               </fieldset>
-              <div submit-success>
-                <template type="amp-mustache">
-                  Subscription successful!
-                </template>
-              </div>
-              <div submit-error>
-                <template type="amp-mustache"> Subscription failed! </template>
-              </div>
             </form>
           </div>
         </div>
@@ -340,5 +320,16 @@
         <div class="right_sidebar">right</div>
       </div>
     </div>
+    <!-- Additional styles or scripts -->
+    <noscript>
+      <style amp-boilerplate>
+        body {
+          -webkit-animation: none;
+          -moz-animation: none;
+          -ms-animation: none;
+          animation: none;
+        }
+      </style>
+    </noscript>
   </body>
 </html>
