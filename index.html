@@ -189,12 +189,14 @@
       }
       .main_profie {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
       }
       .main_profie_2 {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
       }
       .topbar {
         display: flex;
@@ -517,6 +519,14 @@
         font-size: 25px;
         font-weight: 400;
       }
+      .footer_two {
+        flex: 1;
+      }
+      .footer_one,
+      .footer_tree {
+        flex: 1;
+        min-width: 270px;
+      }
       .details_heading {
         color: rgb(22, 187, 118);
         border-bottom: 2px solid rgb(22, 187, 118);
@@ -531,7 +541,7 @@
         flex-direction: column;
 
         align-items: center;
-        gap: 50px;
+        gap: 30px;
       }
       .footer_text {
         text-align: center;
@@ -1224,8 +1234,8 @@
             <h3 class="gray_text">Keamanan & Privasi</h3>
             <amp-img
               src="./assets/tac.png"
-              width="800"
-              height="90"
+              width="400"
+              height="50"
               layout="responsive"
               alt="tac"
             >
