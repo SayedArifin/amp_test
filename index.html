@@ -110,13 +110,16 @@
       .games_card {
         display: flex;
         flex-wrap: wrap;
-        gap: 15px;
+        gap: 12px;
       }
       .other_details {
         border-bottom: 2px solid #c9c8c9;
       }
       .card {
         max-width: 140px;
+      }
+      .minus_button, .plus_button{
+border: none;
       }
       .progress-container {
         margin-bottom: 10px;
@@ -288,6 +291,8 @@
       .searchbar_input {
         border: none;
         flex: 1;
+        outline: none;
+        padding: 0 0 0 10px;
       }
       .section_two {
         flex: 1;
@@ -398,7 +403,7 @@
       @media screen and (max-width: 650px) {
         .left_sidebar {
           flex: 1;
-          min-width: 90%;
+          max-width: 90%;
         }
       }
       @media screen and (max-width: 750px) {
@@ -415,7 +420,7 @@
       .geadiant_text {
         width: 100%;
         border: 2px solid;
-        padding: 4px 6px;
+        padding: 4px 15px;
         height: 30px;
         font-size: 20px;
         display: flex;
@@ -427,7 +432,7 @@
       }
       .form_card {
         width: 100%;
-        padding: 7px;
+        padding: 15px;
         border: 2px solid #585656;
         border-radius: 15px;
       }
@@ -439,7 +444,6 @@
       }
       .input_container {
         display: flex;
-        width: 30%;
         border: 2px solid #585656;
         justify-content: space-between;
         align-items: center;
@@ -532,7 +536,7 @@
         cursor: pointer;
       }
       .faq {
-        min-height: 450px;
+        min-height: 350px;
       }
       .footer_tree {
         display: flex;
@@ -545,38 +549,37 @@
         text-align: center;
       }
       <style>
-  /* Style the accordion sections */
+ 
   amp-accordion section {
-    border-bottom: 1px solid #ddd; /* Example border style */
-    margin-bottom: 10px; /* Example margin */
+    border-bottom: 1px solid #ddd; 
+    margin-bottom: 10px; 
   }
 
   /* Style the headings */
   amp-accordion h4 {
-    font-size: 18px; /* Example font size */
-    color: #333; /* Example text color */
-    background-color: #f0f0f0; /* Example background color */
-    padding: 10px; /* Example padding */
-    margin: 0; /* Example margin */
-    cursor: pointer; /* Make the cursor change to pointer on hover */
+    font-size: 18px; 
+    color: #333; 
+    background-color: #f0f0f0; 
+    padding: 5px; 
+    margin: 0; 
+    cursor: pointer; 
   }
 
-  /* Style the expanded section */
+ 
   amp-accordion section[expanded] {
-    background-color: #e0e0e0; /* Example background color */
+    background-color: #e0e0e0; 
   }
 
-  /* Style the paragraph inside sections */
+
   amp-accordion p {
-    font-size: 16px; /* Example font size */
-    color: #666; /* Example text color */
-    margin: 0; /* Example margin */
-    padding: 10px; /* Example padding */
+    font-size: 16px;
+    color: #666; 
+    margin: 0; 
+    padding: 5px; 
   }
 </style>
     </style>
 
-    <!-- Additional styles or scripts -->
     <noscript>
       <style amp-boilerplate>
         body {
@@ -680,7 +683,7 @@
             <form method="post" action-xhr="#" target="_top">
               <div class="form_second_section">
                 <div class="input_container">
-                  <span class="minus_button">-</span>
+                  <button class="minus_button"><i class="fas fa-minus"></i></button>
                   <input
                     class="number_input"
                     type="number"
@@ -688,7 +691,7 @@
                     value="1"
                     required
                   />
-                  <span class="plus_button">+</span>
+                  <button class="plus_button"><i class="fas fa-plus"></i></button>
                 </div>
                 <p>Stok Total: <span class="bold">5335</span></p>
               </div>
