@@ -532,7 +532,7 @@
         cursor: pointer;
       }
       .faq {
-        min-height: 250px;
+        min-height: 450px;
       }
       .footer_tree {
         display: flex;
@@ -544,6 +544,36 @@
       .footer_text {
         text-align: center;
       }
+      <style>
+  /* Style the accordion sections */
+  amp-accordion section {
+    border-bottom: 1px solid #ddd; /* Example border style */
+    margin-bottom: 10px; /* Example margin */
+  }
+
+  /* Style the headings */
+  amp-accordion h4 {
+    font-size: 18px; /* Example font size */
+    color: #333; /* Example text color */
+    background-color: #f0f0f0; /* Example background color */
+    padding: 10px; /* Example padding */
+    margin: 0; /* Example margin */
+    cursor: pointer; /* Make the cursor change to pointer on hover */
+  }
+
+  /* Style the expanded section */
+  amp-accordion section[expanded] {
+    background-color: #e0e0e0; /* Example background color */
+  }
+
+  /* Style the paragraph inside sections */
+  amp-accordion p {
+    font-size: 16px; /* Example font size */
+    color: #666; /* Example text color */
+    margin: 0; /* Example margin */
+    padding: 10px; /* Example padding */
+  }
+</style>
     </style>
 
     <!-- Additional styles or scripts -->
